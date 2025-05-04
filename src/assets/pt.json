@@ -1,0 +1,21 @@
+{
+  "login": {
+    "tagline": "Informações do mercado em tempo real ao seu alcance",
+    "username": "Nome de usuário",
+    "username_placeholder": "Digite seu nome de usuário",
+    "username_required": "Nome de usuário é obrigatório",
+    "password": "Senha",
+    "password_placeholder": "Digite sua senha",
+    "password_required": "Senha é obrigatória",
+    "password_length": "A senha deve ter pelo menos 8 caracteres",
+    "remember_me": "Lembrar-me",
+    "sign_in": "Entrar",
+    "forgot_username": "Esqueceu o nome de usuário",
+    "forgot_password": "Esqueceu a senha",
+    "security_heading": "Informações de segurança",
+    "security_message": "Sua segurança é nossa prioridade. Implementamos medidas líderes do setor para proteger seus dados:",
+    "security_feature1": "Criptografia de ponta a ponta para todas as transações",
+    "security_feature2": "Autenticação multifator",
+    "security_feature3": "Auditorias de segurança regulares e verificações de conformidade"
+  }
+}

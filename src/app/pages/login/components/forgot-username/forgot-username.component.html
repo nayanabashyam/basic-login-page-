@@ -1,0 +1,62 @@
+<div class="forgot-username">
+  <h2>Retrieve Your Username</h2>
+  
+  @if (!isSubmitted) {
+    <form [formGroup]="forgotUsernameForm" (ngSubmit)="onSubmit()">
+      <p class="instructions">
+        Enter your email address and we'll send you your username.
+      </p>
+      
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="form-control"
+          [class.invalid]="forgotUsernameForm.get('email')?.invalid && forgotUsernameForm.get('email')?.touched"
+          placeholder="Enter your email"
+        />
+        @if (forgotUsernameForm.get('email')?.invalid && forgotUsernameForm.get('email')?.touched) {
+          <div class="error-message">
+            Please enter a valid email address
+          </div>
+        }
+      </div>
+      
+      @if (submitError) {
+        <div class="alert alert-error">
+          {{ submitError }}
+        </div>
+      }
+      
+      <div class="form-actions">
+        <button type="submit" class="btn-submit" [disabled]="isLoading">
+          @if (isLoading) {
+            <span class="spinner"></span>
+            Sending...
+          } @else {
+            Send Username
+          }
+        </button>
+        
+        <button type="button" class="btn-back" (click)="onBackToLogin()">
+          Back to Login
+        </button>
+      </div>
+    </form>
+  } @else {
+    <div class="success-message">
+      <p>
+        <span class="success-icon">✓</span>
+        We've sent your username to your email address.
+      </p>
+      <p class="note">
+        Please check your inbox. If you don't see the email within a few minutes, check your spam folder.
+      </p>
+      <button type="button" class="btn-back-center" (click)="onBackToLogin()">
+        Back to Login
+      </button>
+    </div>
+  }
+</div>

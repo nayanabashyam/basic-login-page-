@@ -1,0 +1,21 @@
+{
+    "login": {
+      "tagline": "Real-time market insights at your fingertips",
+      "username": "Username",
+      "username_placeholder": "Enter your username",
+      "username_required": "Username is required",
+      "password": "Password",
+      "password_placeholder": "Enter your password",
+      "password_required": "Password is required",
+      "password_length": "Password must be at least 8 characters",
+      "remember_me": "Remember me",
+      "sign_in": "Sign In",
+      "forgot_username": "Forgot Username",
+      "forgot_password": "Forgot Password",
+      "security_heading": "Security Information",
+      "security_message": "Your security is our priority. We implement industry-leading measures to protect your data:",
+      "security_feature1": "End-to-end encryption for all transactions",
+      "security_feature2": "Multi-factor authentication",
+      "security_feature3": "Regular security audits and compliance checks"
+    }
+}

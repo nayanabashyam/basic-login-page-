@@ -1,0 +1,21 @@
+{
+  "login": {
+    "tagline": "实时市场洞察，触手可及",
+    "username": "用户名",
+    "username_placeholder": "请输入用户名",
+    "username_required": "用户名为必填项",
+    "password": "密码",
+    "password_placeholder": "请输入密码",
+    "password_required": "密码为必填项",
+    "password_length": "密码长度至少为8个字符",
+    "remember_me": "记住我",
+    "sign_in": "登录",
+    "forgot_username": "忘记用户名",
+    "forgot_password": "忘记密码",
+    "security_heading": "安全信息",
+    "security_message": "您的安全是我们的首要任务。我们实施行业领先的措施来保护您的数据：",
+    "security_feature1": "所有交易的端到端加密",
+    "security_feature2": "多因素身份验证",
+    "security_feature3": "定期安全审计和合规检查"
+  }
+}

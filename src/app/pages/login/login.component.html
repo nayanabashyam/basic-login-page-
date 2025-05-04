@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-background">
+    <div class="overlay"></div>
+  </div>
+
+  
+  <div class="login-card">
+    <div class="card-header">
+      <h1> Login to StoxFlick</h1>
+      <p>Real-time market insights at your fingertips</p>
+    </div>
+    
+    <div class="card-content">
+      @switch (activeView) {
+        @case ('login') {
+          <app-login-form 
+            (forgotPasswordClick)="showForgotPassword()" 
+            (forgotUsernameClick)="showForgotUsername()">
+          </app-login-form>
+        }
+        @case ('forgotPassword') {
+          <app-forgot-password (backToLoginClick)="showLogin()"></app-forgot-password>
+        }
+        @case ('forgotUsername') {
+          <app-forgot-username (backToLoginClick)="showLogin()"></app-forgot-username>
+        }
+      }
+    </div>
+    
+    <app-security-message></app-security-message>
+  </div>
+</div>

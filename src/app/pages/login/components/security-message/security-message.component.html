@@ -1,0 +1,22 @@
+<div class="security-message">
+  <button (click)="toggleExpand()" class="toggle-button">
+    <span class="lock-icon">🔒</span>
+    <span class="message">Security Information</span>
+    <span class="arrow" [class.expanded]="isExpanded">▼</span>
+  </button>
+  
+  <div class="security-details" [class.expanded]="isExpanded">
+    <p>
+      StoxFlick uses industry-standard security protocols to protect your information. We never store sensitive financial data or passwords in plain text.
+    </p>
+    <ul>
+      <li>Two-factor authentication available for account protection</li>
+      <li>Automatic sign-out after 15 minutes of inactivity</li>
+      <li>Encrypted connection with 256-bit SSL</li>
+      <li>Regular security audits and testing</li>
+    </ul>
+    <p class="warning">
+      Never share your login credentials or respond to emails requesting your password.
+    </p>
+  </div>
+</div>
